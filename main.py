@@ -29,9 +29,9 @@ def read_csv(filename: str) -> List[User]:
 
 database: List[User] = read_csv('vehicles.csv')
 
-# @app.get("/")
-# async def root():
-#     return {'message': 'Its working'}
+@app.get("/")
+async def root():
+    return {'message': 'Its working'}
 
 @app.get("/api/v1/users")
 async def fetch_users():
